@@ -30,7 +30,7 @@ public class PropertyParserTest {
 
     private static final String propFileName = "default.properties";
     private static final String badPropFileName = "bad.properties";
-    private static final String localPropFileName = "test/resources/localonly.properties";
+    private static final String localPropFileName = "test/main/resources/localonly.properties";
     private static final String testPropValue = "embedded_zk";
 
     private PropertyParser propertyParser = new PropertyParser(propFileName);
