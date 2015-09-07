@@ -77,6 +77,9 @@
             <resource>
                 <directory>src/main/resources</directory>
             </resource>
+            <resource>
+                <directory>test/main/resources</directory>
+            </resource>
         </resources>
 
         <plugins>
@@ -107,12 +110,6 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <relocations>
-                                <relocation>
-                                    <pattern>backtype.storm.disruptor</pattern>
-                                    <shadedPattern>backtype.shaded.storm.disruptor</shadedPattern>
-                                </relocation>
-                            </relocations>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer" />
